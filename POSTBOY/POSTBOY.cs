@@ -65,5 +65,10 @@ namespace POSTBOY
         {
             TB_RESULT.Text = SEND_REQUEST();
         }
+
+        private void POSTBOY_SizeChanged(object sender, EventArgs e)
+        {
+            TB_RESULT.Size = new Size(Convert.ToInt32(this.Size.Width * 0.8), Convert.ToInt32(this.Size.Height * 0.65));
+        }
     }
 }

@@ -91,7 +91,7 @@
             // 
             this.TB_RESULT.Location = new System.Drawing.Point(16, 177);
             this.TB_RESULT.Name = "TB_RESULT";
-            this.TB_RESULT.Size = new System.Drawing.Size(708, 261);
+            this.TB_RESULT.Size = new System.Drawing.Size(708, 341);
             this.TB_RESULT.TabIndex = 6;
             this.TB_RESULT.Text = "";
             // 
@@ -99,7 +99,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 530);
             this.Controls.Add(this.TB_RESULT);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.TB_URL);
@@ -109,6 +109,7 @@
             this.Name = "POSTBOY";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.SizeChanged += new System.EventHandler(this.POSTBOY_SizeChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 
