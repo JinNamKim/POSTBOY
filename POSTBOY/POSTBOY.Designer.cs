@@ -32,6 +32,12 @@
             this.TB_URL = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.TB_RESULT = new System.Windows.Forms.RichTextBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -73,18 +79,71 @@
             // 
             // TB_RESULT
             // 
-            this.TB_RESULT.Location = new System.Drawing.Point(18, 267);
+            this.TB_RESULT.Location = new System.Drawing.Point(18, 313);
             this.TB_RESULT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TB_RESULT.Name = "TB_RESULT";
             this.TB_RESULT.Size = new System.Drawing.Size(914, 421);
             this.TB_RESULT.TabIndex = 6;
             this.TB_RESULT.Text = "";
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Location = new System.Drawing.Point(18, 74);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(914, 220);
+            this.tabControl1.TabIndex = 7;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(906, 191);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(192, 71);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(906, 191);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(906, 191);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
             // POSTBOY
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(964, 695);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.TB_RESULT);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.TB_URL);
@@ -95,6 +154,7 @@
             this.Text = "POSTBOY V1.0";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.SizeChanged += new System.EventHandler(this.POSTBOY_SizeChanged);
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,6 +165,11 @@
         private System.Windows.Forms.TextBox TB_URL;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RichTextBox TB_RESULT;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
     }
 }
 

@@ -23,6 +23,10 @@ namespace POSTBOY
         {
             comboBox1.SelectedIndex = 0;
             this.Size = new Size(982, 763);
+            tabControl1.Size = new Size(931, 220);
+            TB_RESULT.Location = new Point(18, 310);
+            TB_RESULT.Size = new Size(931, 350);
+
         }
 
 
@@ -69,11 +73,10 @@ namespace POSTBOY
 
         private void POSTBOY_SizeChanged(object sender, EventArgs e)
         {
-            int a = this.Size.Width;
-            int b = this.Size.Height;
-            int c = a * b;
-            //TB_RESULT.Size = new Size(Convert.ToInt32(this.Size.Width * 0.9), Convert.ToInt32(this.Size.Height * 0.55));
-            TB_RESULT.Size = new Size(Convert.ToInt32(this.Size.Width -50), Convert.ToInt32(this.Size.Height - 300));
+            TB_RESULT.Size = new Size(Convert.ToInt32(this.Size.Width -50), Convert.ToInt32(this.Size.Height - 370));
+            tabControl1.Size = new Size(Convert.ToInt32(this.Size.Width - 50), tabControl1.Size.Height);
+            button1.Location = new Point(Convert.ToInt32(this.Size.Width - 127), button1.Location.Y);
+            TB_URL.Size = new Size(Convert.ToInt32(this.Size.Width - 250), tabControl1.Size.Height);
         }
     }
 }
