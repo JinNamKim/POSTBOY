@@ -22,6 +22,7 @@ namespace POSTBOY
         private void Form1_Load(object sender, EventArgs e)
         {
             comboBox1.SelectedIndex = 0;
+            this.Size = new Size(982, 763);
         }
 
 
@@ -68,7 +69,11 @@ namespace POSTBOY
 
         private void POSTBOY_SizeChanged(object sender, EventArgs e)
         {
-            TB_RESULT.Size = new Size(Convert.ToInt32(this.Size.Width * 0.8), Convert.ToInt32(this.Size.Height * 0.65));
+            int a = this.Size.Width;
+            int b = this.Size.Height;
+            int c = a * b;
+            //TB_RESULT.Size = new Size(Convert.ToInt32(this.Size.Width * 0.9), Convert.ToInt32(this.Size.Height * 0.55));
+            TB_RESULT.Size = new Size(Convert.ToInt32(this.Size.Width -50), Convert.ToInt32(this.Size.Height - 300));
         }
     }
 }
